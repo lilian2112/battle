@@ -13,3 +13,12 @@ feature 'shows hit points' do
     expect(page).to have_content("100HP")
   end
 end
+
+feature 'attack opponent' do
+  scenario 'player 1 talks sh**t about player 2' do
+    sign_in_and_play
+    click_button("Talk smack")
+    visit('/attack')
+    expect(page).to have_content"Stan got burned"
+  end
+end
