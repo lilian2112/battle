@@ -30,4 +30,15 @@ feature 'return to play page' do
     expect(page).to have_content("90HP")
   end
 end
+
+feature 'retaliate' do
+  scenario 'the previously attacked player, can now attack their enemy' do
+    sign_in_and_play
+    click_button("Talk smack")
+    click_button("Back to the battle")
+    click_button("Talk smack")
+    click_button("Back to the battle")
+    expect(page).to have_content("Peter 90HP")
+  end
+end
 end
