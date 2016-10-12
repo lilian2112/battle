@@ -21,4 +21,13 @@ feature 'attack opponent' do
     visit('/attack')
     expect(page).to have_content"Stan got burned"
   end
+
+feature 'return to play page' do
+  scenario 'return to battle after attack' do
+    sign_in_and_play
+    click_button("Talk smack")
+    click_button("Back to the battle")
+    expect(page).to have_content("90HP")
+  end
+end
 end
