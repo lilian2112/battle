@@ -10,7 +10,4 @@ describe Player do
     expect(player.hp).to eq 100
   end
 
-  it "reduces hit points by 10 when attacked" do
-    expect(player.damage).to eq 90
-  end
 end

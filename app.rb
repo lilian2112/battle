@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require_relative 'lib/player.rb'
+require_relative 'lib/game.rb'
 
 class Battle < Sinatra::Base
 
@@ -25,7 +26,7 @@ class Battle < Sinatra::Base
   get '/attack' do
     @name_1 = $name1.name
     @name_2 = $name2.name
-    $name1.attacks($name2)
+    Game.new.attacks($name2)
     erb :attack
   end
   # start the server if ruby file executed directly
