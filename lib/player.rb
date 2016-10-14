@@ -1,5 +1,5 @@
 class Player
-  INITIAL_HP = 100
+  INITIAL_HP = 60
   attr_reader :name
   attr_accessor :hp
 
@@ -8,8 +8,16 @@ class Player
     @hp = hp
   end
 
+  def random_damage
+    @damage = rand(10..25)
+  end
+
   def damage
-    @hp -= 10
+    random_damage
+    if @damage < @hp
+    @hp -= @damage
+  else @hp = "dies gracefully with 0 "
+    end
   end
 
 end

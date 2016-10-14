@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,100);
+
+h1{
+  margin: 20px;
+  text-align:center;
+  font-size: 50px;
+  color: pink;
+  font-family: "Raleway", sans-serif;
+}
+
+.stats {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.player1 {
+  float: left;
+  color: white;
+  margin-left: 25%
+}
+
+.player2 {
+  float: right;
+  color: white;
+  margin-right: 25%
+}
+
+
+img {
+  width: 300px;
+  margin-left:150px;
+  margin-right: 150px;
+  margin-top: 30px
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:pink;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input {
+  border: solid black 2px
+  height: 35px;
+  font-size: 30px
+}

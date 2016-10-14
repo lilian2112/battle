@@ -1,8 +1,32 @@
-<h1> Welcome to the jungle! </h1>
-<h2> Sign in to play </h2>
+<!DOCTYPE html>
 
-<form action="/names" method="post">
-  <input type="text" name="name_1">
-  <input type="text" name="name_2">
-  <input type="submit" value="touch me, I know you want to">
-</form>
+<html>
+
+<head>
+  <link rel="stylesheet" href="reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+
+<h1> CHOOSE YOUR BOYZ </h1>
+
+<div class = ImageHolder>
+  <a> <img class = team1 src='http://dissmiss.com/blog/wp-content/uploads/2010/08/capuletboys.jpg'></a>
+  <a> <img class = team2 src='http://dissmiss.com/blog/wp-content/uploads/2010/08/montagueboys.jpg'></a>
+</div>
+
+<div class= form>
+  <form action='/names' method='post'>
+    <div class = player1>
+      <input type='text' name='player1' placeholder="Player 1">
+    </div>
+    <div class = player2>
+      <input type='text' name='player2' placeholder="Player 2">
+    </div>
+    <div>
+      <input type='submit' value='Submit'>
+    </div>
+  </form>
+</div>
+
+</html>

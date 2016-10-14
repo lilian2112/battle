@@ -7,7 +7,7 @@ describe Player do
   end
 
   it "has has hit-points associated with each player" do
-    expect(player.hp).to eq 100
+    expect(player.hp).to eq 60
   end
 
 end

@@ -1,5 +1,29 @@
-<h1><%=@game.turn.name%> pwned you!</h1>
+<h1><%=@game.turn.name%> what a strike!</h1>
 
 <form action="/play">
   <input type="submit" value="Back to the battle">
 </form>
+
+<style>
+h1 {
+  text-align: center;
+  font-size: 200px;
+  color: pink
+  margin-top: 40%
+}
+
+input[type=submit] {
+    
+    padding:5px 15px;
+    background:pink;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input {
+  border: solid black 2px
+  height: 35px;
+  font-size: 30px
+}
+</style>

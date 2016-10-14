@@ -1,0 +1,61 @@
+
+
+h1 {
+  margin-top: 20px;
+  font-size: 100px;
+  color: pink;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: black;
+  font-size: 30px;
+}
+
+.ImageHolder {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px
+}
+
+.team1 {
+   border:5px solid red;
+   width: 45%;
+}
+.team2 {
+   border:5px solid blue;
+  width: 45%;
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+
+}
+.player1 {
+  float: left;
+  margin-left: 15%;
+}
+
+.player2 {
+  float: right;
+  margin-right: 15%;
+}
+
+input[type=submit] {
+    padding-left: 50%;
+    padding:5px 15px;
+    background:pink;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input {
+  border: solid black 2px
+  height: 35px;
+  font-size: 30px
+}

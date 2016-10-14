@@ -10,6 +10,14 @@ class Game
     @turn = player2
   end
 
+  def self.new_game(player1, player2)
+    @game = Game.new(player1, player2)
+  end
+
+  def self.current_game
+    @game
+  end
+
   def player1
     @player1
   end
